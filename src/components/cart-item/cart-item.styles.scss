@@ -3,9 +3,15 @@
   display: flex;
   height: 80px;
   margin-bottom: 15px;
+  justify-content: center;
+  align-items: center;
 
   img {
     width: 30%;
+  }
+
+  .cart-remove {
+    cursor: pointer;
   }
 
   .item-details {
