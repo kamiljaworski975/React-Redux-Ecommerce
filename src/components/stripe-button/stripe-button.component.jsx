@@ -1,6 +1,5 @@
 import React from 'react';
 import StripeCheckout from 'react-stripe-checkout';
-import {ReactComponent as logo} from '../../assets/crown.svg'
 
 const StripeCheckoutButton = ({price}) => {
     const priceForStripe = price + 100;
@@ -17,7 +16,6 @@ const StripeCheckoutButton = ({price}) => {
             name='Ecommerce'
             billingAddress
             shippingAddress
-            image={logo}
             description= {`Your total is $${price}`}
             panelLabel='Pay Now'
             token={onToken}

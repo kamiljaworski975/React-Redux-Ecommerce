@@ -13,13 +13,7 @@ const CategoryPage = ({ collection }) => {
       <h2 className="title">{title}</h2>
       <div className="items">
         {items.map((item) => {
-          return (
-            <CollectionItem
-              className="category-item"
-              key={item.id}
-              items={item}
-            />
-          );
+          return <CollectionItem key={item.id} items={item} />;
         })}
       </div>
     </div>
